@@ -11,9 +11,11 @@ function App() {
     if (mode === 'light') {
       setMode('dark')
       document.body.style.backgroundColor = 'gray'
+      document.title = 'TextUtils - Dark'
     } else {
       setMode('light')
       document.body.style.backgroundColor = 'white'
+      document.title = 'TextUtils - Light'
     }
   }
 

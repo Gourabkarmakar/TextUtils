@@ -60,7 +60,7 @@ const Textutil = (props) => {
       <div className="shadow-lg p-3 mb-5 bg-white rounded">
 
         <p>
-          Total {text.split(" ").length} words and {text.length} Sentence
+          Total {text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} Characters
         </p>
         <p>{0.008 *  text.split(" ").length} Minutes read</p>
       
